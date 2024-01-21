@@ -1,0 +1,113 @@
+.movies {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.movie-items {
+  padding: 10px 90px;
+  display: grid;
+  margin-top: 80px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  height: auto;
+}
+
+.movie-name {
+  text-align: start;
+  width: 83%;
+  top: -80px;
+  left: 110px;
+  position: absolute;
+  color: red;
+  font-size: 30px;
+  font-style: oblique;
+  border-bottom: 2px solid red;
+  padding-bottom: 9px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.load-more {
+  align-self: center;
+}
+
+.load-btn {
+  padding: 8px 30px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 1s;
+}
+
+.load-btn:hover {
+  background-color: red;
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.trending-section {
+  padding: 10px 80px;
+}
+
+.top-div {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  font-family: sans-serif;
+}
+
+.link {
+  position: absolute;
+  right: 1px;
+  top: 8px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  padding: 5px 28px;
+  margin-right: 100px;
+  border-radius: 12px;
+  transition: color 1s;
+  transition: background-color 1s;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: black;
+    box-shadow: 0 0 5px red;
+  }
+  50% {
+    background-color: black;
+    box-shadow: 0 0 20px red;
+  }
+  100% {
+    background-color: black;
+    box-shadow: 0 0 60px red;
+  }
+}
+
+.link {
+  animation: glowing 1300ms infinite;
+}
+
+.link:hover {
+  background-color: red;
+  color: white;
+  border: none;
+}
